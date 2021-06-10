@@ -7,6 +7,7 @@ export default {
   component: Button,
   argTypes: {
     backgroundColor: { control: 'color' },
+    onClick: { action: 'clicked' }
   },
 };
 
@@ -16,6 +17,9 @@ export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
   label: 'Button',
+  onClick: function() {
+    alert('hello world!')
+  }
 };
 
 export const Secondary = Template.bind({});
