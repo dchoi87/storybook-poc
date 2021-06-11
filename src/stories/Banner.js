@@ -4,6 +4,9 @@ import './banner.css';
 import { Button } from './Button';
 
 export const Banner = ({ backgroundColor, primaryText, secondaryText, size, color, ...props }) => {
+    const handleClick = () => {
+        alert('learning more!');
+    }
     return (
         <div className={ `banner-container ${backgroundColor}` }>
             <div className="banner">
@@ -12,7 +15,7 @@ export const Banner = ({ backgroundColor, primaryText, secondaryText, size, colo
                     <p style={{ color: color }}>{ secondaryText }</p>
                 </div>
                 <div className="right-block">
-                    <Button label="Learn More" size="large" backgroundColor="#fff" />
+                    <Button label="Learn More" size="large" backgroundColor="#fff" onClick={handleClick}/>
                 </div>
             </div>
         </div>
