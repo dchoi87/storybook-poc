@@ -1,6 +1,5 @@
 import React from 'react';
-
-import { Banner } from './Banner';
+import { Banner } from '../components/banners/Banner';
 
 export default {
   title: 'Dev/Alert',

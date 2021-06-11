@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './banner.css';
-import { Button } from './Button';
+import './banner.scss';
+import { Button } from '../buttons/Button';
 
 export const Banner = ({ backgroundColor, primaryText, secondaryText, size, color, ...props }) => {
     const handleClick = () => {
