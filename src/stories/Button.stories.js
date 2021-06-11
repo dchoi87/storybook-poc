@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '../components/buttons/Button';
 
 export default {
-  title: 'Example/Button',
+  title: 'Components/Button',
   component: Button,
   argTypes: {
     backgroundColor: { control: 'color' },
@@ -17,7 +17,7 @@ Primary.args = {
   primary: true,
   label: 'Button',
   onClick: function() {
-    alert('hello world!')
+    alert('hello world!');
   }
 };
 

@@ -2,15 +2,15 @@ import React from 'react';
 import { Banner } from '../components/banners/Banner';
 
 export default {
-  title: 'Dev/Alert',
+  title: 'Components/Banner',
   component: Banner,
   argTypes: {
     backgroundColor: {
-        options: ['gradient-gray-blue', 'gradient-zodiac-blue', 'gradient-alice-gray'],
-        control: { type: 'select' }
+      options: ['gradient-gray-blue', 'gradient-zodiac-blue', 'gradient-alice-gray'],
+      control: { type: 'select' }
     },
     color: {
-        control: { type: 'color' }
+      control: { type: 'color' }
     }
   },
 };
