@@ -1,15 +1,13 @@
 h1 {
-    font-family: 'Gotham Thin'!important;
+    font-family: 'Gotham Thin';
     font-weight: 300;
 }
 body {
-    font-family: 'Gotham'!important;
+    font-family: 'Gotham';
     font-weight: 300;
 }
 button {
-    font-family: 'Gotham'!important;
-    text-transform: uppercase;
-    font-weight: 300;
+    // text-transform: uppercase;
 }
 
 h1 {
@@ -45,4 +43,15 @@ p {
     .right-block {
         margin-top: 0;
     }
+}
+
+// cedars bg
+.gradient-gray-blue {
+    background-color: #58627c;
+}
+.gradient-zodiac-blue {
+    background-color: #424753;
+}
+.gradient-alice-gray {
+    background-color: #f4f5f7;
 }
