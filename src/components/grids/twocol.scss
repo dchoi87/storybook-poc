@@ -1,0 +1,45 @@
+.grid {
+    font-family: 'Gotham';
+    font-weight: 300;
+    border: 1px solid #efefef;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+            "right"
+            "left";
+
+    h1, p {
+        margin: 5px 0;
+        display: block;
+    }
+    .responsive {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .left-block {
+        grid-area: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+    }
+    .right-block {
+        grid-area: right;
+    }
+    &.reverse {
+        grid-template-areas: 
+            "left" 
+            "right";
+    }
+    // media queries
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "left right";
+
+        &.reverse {
+            grid-template-areas: "right left";
+        }
+    }
+}

@@ -3,6 +3,12 @@ import PropTypes from 'prop-types';
 import './banner.scss';
 import { Button } from '../buttons/Button';
 
+/**
+ * Placeholder Text
+ * 
+ * - Bullet 1
+ * - Bullet 2
+ */
 export const Banner = ({ backgroundColor, primaryText, secondaryText, size, color, ...props }) => {
     const handleClick = () => {
         alert('learning more!');
