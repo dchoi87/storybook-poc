@@ -27,6 +27,12 @@ import { TwoCol } from "../components/grids/TwoCol";
                 type: "color",
             },
         },
+        color: {
+            name: "Background",
+            control: {
+                type: "color",
+            },
+        },
     }}
 />
 
@@ -43,10 +49,19 @@ Some placeholder text
 
 <Canvas>
     <Story
-        name="Two Column"
+        name="Two Col"
         args={{
             img: "https://fakeimg.pl/800x600/cccccc,128/7d7d7d,255/?text=Img&font=lobster",
             reverse: false
+        }}>
+        {(args) => <TwoCol {...args} />}
+    </Story>
+    <Story
+        name="Two Col Dark Reverse"
+        args={{
+            color: "#fff",
+            background: "#424753",
+            reverse: true
         }}>
         {(args) => <TwoCol {...args} />}
     </Story>

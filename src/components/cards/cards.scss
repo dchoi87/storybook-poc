@@ -1,0 +1,29 @@
+.cards-container {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    max-width: 990px;
+    margin: 0 auto;
+
+    .responsive {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .cards {
+        display: grid;
+        grid-gap: 15px;
+    }
+    .card {
+        border: 1px solid #ccc;
+
+        .cta {
+            padding: 15px;
+        }
+    }
+    // media queries
+    @media screen and (min-width: 768px) {
+        .cards {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
