@@ -1,8 +1,8 @@
 .grid {
-    font-family: 'Gotham';
-    font-weight: 300;
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     border: 1px solid #efefef;
-    
+    font-weight: 300;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -29,8 +29,8 @@
         grid-area: right;
     }
     &.reverse {
-        grid-template-areas: 
-            "left" 
+        grid-template-areas:
+            "left"
             "right";
     }
     // media queries

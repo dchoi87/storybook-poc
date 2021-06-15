@@ -4,8 +4,8 @@ import './banner.scss';
 import { Button } from '../buttons/Button';
 
 /**
- * Placeholder Text
- * 
+ * Written in JSDoc format
+ *
  * - Bullet 1
  * - Bullet 2
  */

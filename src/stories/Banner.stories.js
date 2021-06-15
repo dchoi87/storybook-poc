@@ -16,11 +16,9 @@ export default {
     },
     primaryText: {
       name: 'Primary Text',
-      control: { type: 'color' }
     },
     secondaryText: {
       name: 'Secondary Text',
-      control: { type: 'color' }
     }
   },
   parameters: {
