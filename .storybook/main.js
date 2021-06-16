@@ -1,3 +1,5 @@
+const webpack = require('webpack');
+
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
@@ -9,5 +11,13 @@ module.exports = {
     "@storybook/preset-create-react-app",
     "@whitespace/storybook-addon-html",
     "@storybook/addon-a11y"
-  ]
+  ],
+  webpackFinal: (config) => {
+    config.plugins.push(new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    }));
+    return config;
+  },
 }

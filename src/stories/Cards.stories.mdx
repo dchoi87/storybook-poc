@@ -11,6 +11,9 @@ import { Cards } from "../components/cards/Cards";
         primaryText: {
             name: "Primary Text",
         },
+        carousel: {
+            name: "Carousel",
+        },
     }}
 />
 
@@ -22,6 +25,13 @@ Placeholder Text
     <Story
         name="Newsfeed"
         args={{}}>
+        {(args) => <Cards {...args} />}
+    </Story>
+    <Story
+        name="Carousel"
+        args={{
+            carousel: true
+        }}>
         {(args) => <Cards {...args} />}
     </Story>
 </Canvas>
