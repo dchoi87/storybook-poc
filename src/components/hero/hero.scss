@@ -1,0 +1,33 @@
+.hero-container {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px dashed #ccc;
+
+    h1, p {
+        margin: 5px 0;
+    }
+    .left-block, .right-block {
+        padding: 15px;
+    }
+    .left-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .right-block {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+    .cta {
+        border: 1px dashed #ccc;
+        padding: 15px;
+        border-radius: 5px;
+    }
+}
