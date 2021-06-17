@@ -1,16 +1,20 @@
 .hero-container {
     font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    
     width: 100%;
     max-width: 990px;
     margin: 0 auto;
-    padding: 15px;
     border: 1px dashed #ccc;
+    position: relative;
 
     h1, p {
         margin: 5px 0;
+    }
+    .content {
+        top: 0;
+        left: 0;
+        height: 100%;
     }
     .left-block, .right-block {
         padding: 15px;
@@ -21,13 +25,38 @@
         justify-content: center;
     }
     .right-block {
+        display: flex;
+        align-items: center;
+    }
+    .ctas {
+        flex: 1 1 auto;
         display: grid;
+        grid-gap: 1px;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 15px;
+        height: 300px;
     }
     .cta {
         border: 1px dashed #ccc;
-        padding: 15px;
-        border-radius: 5px;
+        padding: 15px 30px;
+        background: transparent;
+    }
+    .responsive {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    // media queries
+    @media screen and (min-width: 768px) {
+        .content {
+            position: absolute;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .ctas {
+            grid-gap: 15px;
+        }
+        .cta {
+            border-radius: 5px;
+        }
     }
 }

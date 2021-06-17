@@ -11,7 +11,7 @@ export default {
       control: { type: 'select' }
     },
     color: {
-      name: 'Name',
+      name: 'Color',
       control: { type: 'color' }
     },
     primaryText: {
@@ -31,6 +31,6 @@ const Template = (args) => <Banner {...args} />;
 export const SiteWide = Template.bind({});
 
 SiteWide.args = {
-  primaryText: 'COVID-19 Information',
-  secondaryText : 'Read the latest vaccine information and schedule your appointment.'
+  primaryText: 'Lorem ipsum dolor',
+  secondaryText : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt odio.'
 };
