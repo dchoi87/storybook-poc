@@ -45,7 +45,7 @@ export const Cards = ({ img, primaryText, carousel }) => {
                     }
                 </div>
             }
-            <Button label="See More News" size="large" backgroundColor="#fff" />
+            <Button label="See More News" size="medium" backgroundColor="#424753" primary={ false }/>
         </div>
     );
 };

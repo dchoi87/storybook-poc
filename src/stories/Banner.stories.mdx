@@ -1,0 +1,39 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs/blocks";
+import { Banner } from '../components/banners/Banner';
+
+<Meta
+    title="Components/Banner"
+    component={Banner}
+    argTypes={{
+        backgroundColor: {
+            name: 'Background Color',
+            options: ['gradient-gray-blue', 'gradient-zodiac-blue', 'gradient-alice-gray'],
+            control: { type: 'select' }
+        },
+        color: {
+            name: 'Color',
+            control: { type: 'color' }
+        },
+        primaryText: {
+            name: 'Primary Text',
+        },
+        secondaryText: {
+            name: 'Secondary Text',
+        }
+    }}
+/>
+
+# Banner
+
+Sitewide description text
+
+<Story
+    name="Site Wide"
+    args={{
+      primaryText: 'Lorem ipsum dolor',
+      secondaryText : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt odio.'
+    }}>
+    {(args) => <Banner {...args} />}
+</Story>
+
+<ArgsTable of={Banner} />

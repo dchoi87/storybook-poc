@@ -14,7 +14,7 @@ export const Home = ({}) => {
             <Banner />
             <Cards />
             <TwoCol />
-            <TwoCol reverse={ true } color="#fff" background="#424753" />
+            <TwoCol reverse={ true } color="#fff" background="#424753" cta={ true } />
         </div>
     );
 };

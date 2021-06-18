@@ -3,13 +3,7 @@ import PropTypes from 'prop-types';
 import './banner.scss';
 import { Button } from '../buttons/Button';
 
-/**
- * Written in JSDoc format
- *
- * - Bullet 1
- * - Bullet 2
- */
-export const Banner = ({ backgroundColor, primaryText, secondaryText, size, color, ...props }) => {
+export const Banner = ({ backgroundColor, primaryText, secondaryText, color }) => {
     const handleClick = () => {
         alert('learning more!');
     }
@@ -21,7 +15,7 @@ export const Banner = ({ backgroundColor, primaryText, secondaryText, size, colo
                     <p style={{ color: color }}>{ secondaryText }</p>
                 </div>
                 <div className="right-block">
-                    <Button label="Learn More" size="large" backgroundColor="#fff" onClick={ handleClick } />
+                    <Button label="Learn More" size="medium" primary={false} backgroundColor="#424753" onClick={ handleClick } />
                 </div>
             </div>
         </div>

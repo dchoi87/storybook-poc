@@ -1,0 +1,47 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs/blocks";
+import { Button } from '../components/buttons/Button';
+
+<Meta
+    title="Components/Button"
+    component={Button}
+    argTypes={{
+      backgroundColor: {
+        name: 'Color',
+        control: 'color'
+      },
+      onClick: {
+        action: 'clicked'
+      }
+    }}
+/>
+
+# Button
+
+## Primary
+Primary button description text
+
+<Story
+    name="Primary"
+    args={{
+      onClick: function() {
+        alert('hello world!');
+      }
+    }}>
+    {(args) => <Button {...args} />}
+</Story>
+
+## Secondary
+Secondary button description text
+
+<Story
+    name="Secondary"
+    args={{
+      primary: false,
+      onClick: function() {
+        alert('hello world!');
+      }
+    }}>
+    {(args) => <Button {...args} />}
+</Story>
+
+<ArgsTable of={Button} />

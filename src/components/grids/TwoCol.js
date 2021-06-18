@@ -13,7 +13,7 @@ export const TwoCol = ({ img, reverse, primaryText, secondaryText, color, backgr
                     {
                         cta &&
                         <div className="cta">
-                            <Button label="Learn More" size="large" backgroundColor="#fff" />
+                            <Button label="Learn More" size="medium" backgroundColor="#424753" primary={ false } />
                         </div>
                     }
                 </div>

@@ -2,7 +2,7 @@ import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs/blocks";
 import { TwoCol } from "../components/grids/TwoCol";
 
 <Meta
-    title="Components/Grids"
+    title="Components/Grid"
     component={TwoCol}
     argTypes={{
         img: {
@@ -49,6 +49,17 @@ Light description text
     args={{
         img: "https://fakeimg.pl/800x600/cccccc,128/7d7d7d,255/?text=Img&font=lobster",
         reverse: false
+    }}>
+    {(args) => <TwoCol {...args} />}
+</Story>
+
+## Light
+Light description text
+
+<Story
+    name="Two Col w/ CTA"
+    args={{
+        cta: true
     }}>
     {(args) => <TwoCol {...args} />}
 </Story>
