@@ -37,5 +37,7 @@ Banner.propTypes = {
 
 Banner.defaultProps = {
     color: '#fff',
-    backgroundColor: 'gradient-zodiac-blue'
+    backgroundColor: 'gradient-zodiac-blue',
+    primaryText: 'Lorem ipsum dolor',
+    secondaryText : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque tincidunt odio.'
 };

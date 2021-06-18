@@ -1,9 +1,21 @@
+* , *:before, *:after{ 
+    box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    -webkit-box-sizing:border-box; 
+    -ms-box-sizing:border-box;
+}
 .cards-container {
     font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
-    max-width: 990px;
-    margin: 0 auto;
+    width: 100%;
+    border: 1px dashed #ccc;
+    text-align: center;
+    padding: 15px;
 
+    h1 {
+        text-align: left;
+        margin-top: 0;
+    }
     .responsive {
         display: block;
         width: 100%;
@@ -20,6 +32,9 @@
             padding: 15px;
             color: #6c6c6c;
         }
+    }
+    button {
+        margin-top: 15px;
     }
     // media queries
     @media screen and (min-width: 768px) {

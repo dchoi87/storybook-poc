@@ -1,0 +1,16 @@
+.home-container {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    max-width: 990px;
+    margin: 0 auto;
+
+    .responsive {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    > * {
+        margin: 5px 0;
+    }
+}

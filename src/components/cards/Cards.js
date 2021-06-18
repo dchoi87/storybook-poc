@@ -4,10 +4,12 @@ import './cards.scss';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { Button } from '../buttons/Button';
 
 export const Cards = ({ img, primaryText, carousel }) => {
     return (
         <div className="cards-container">
+            <h1>Lorem ipsum dolor sit amet</h1>
             {
                 carousel ?
                 <OwlCarousel
@@ -43,6 +45,7 @@ export const Cards = ({ img, primaryText, carousel }) => {
                     }
                 </div>
             }
+            <Button label="See More News" size="large" backgroundColor="#fff" />
         </div>
     );
 };

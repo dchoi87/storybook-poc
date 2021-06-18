@@ -1,6 +1,6 @@
 .grid {
     font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    border: 1px solid #efefef;
+    border: 1px dashed #ccc;
     font-weight: 300;
 
     display: grid;
@@ -27,11 +27,6 @@
     }
     .right-block {
         grid-area: right;
-    }
-    &.reverse {
-        grid-template-areas:
-            "left"
-            "right";
     }
     // media queries
     @media screen and (min-width: 768px) {

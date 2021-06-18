@@ -1,0 +1,21 @@
+import { Meta, Story, Canvas, ArgsTable } from "@storybook/addon-docs/blocks";
+import { Home } from "../pages/Home";
+
+<Meta
+    title="Pages/Home"
+    component={Home}
+/>
+
+# Home
+
+Placeholder Text
+
+<Canvas>
+    <Story
+        name="Home"
+        args={{}}>
+        {(args) => <Home {...args} />}
+    </Story>
+</Canvas>
+
+<ArgsTable of={Home} />
