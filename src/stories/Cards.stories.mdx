@@ -19,21 +19,26 @@ import { Cards } from "../components/cards/Cards";
 
 # Cards
 
-Placeholder Text
+## Static
 
-<Canvas>
-    <Story
-        name="Newsfeed"
-        args={{}}>
-        {(args) => <Cards {...args} />}
-    </Story>
-    <Story
-        name="Carousel"
-        args={{
-            carousel: true
-        }}>
-        {(args) => <Cards {...args} />}
-    </Story>
-</Canvas>
+Carousel description text
+
+<Story
+    name="Newsfeed"
+    args={{}}>
+    {(args) => <Cards {...args} />}
+</Story>
+
+## Carousel
+
+Carousel description text
+
+<Story
+    name="Carousel"
+    args={{
+        carousel: true
+    }}>
+    {(args) => <Cards {...args} />}
+</Story>
 
 <ArgsTable of={Cards} />

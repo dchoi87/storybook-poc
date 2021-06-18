@@ -6,7 +6,7 @@ import { TwoCol } from "../components/grids/TwoCol";
     component={TwoCol}
     argTypes={{
         img: {
-            name: "Image Source",
+            name: "Image",
             control: { type: "text" },
         },
         reverse: {
@@ -20,6 +20,9 @@ import { TwoCol } from "../components/grids/TwoCol";
         },
         secondaryText: {
             name: "Secondary Text",
+        },
+        cta: {
+            name: "CTA",
         },
         color: {
             name: "Color",
@@ -38,33 +41,29 @@ import { TwoCol } from "../components/grids/TwoCol";
 
 # Two Column
 
-Written in MDX format
+## Light
+Light description text
 
-## Header 1
-* Bullet 1
-* Bullet 2
+<Story
+    name="Two Col"
+    args={{
+        img: "https://fakeimg.pl/800x600/cccccc,128/7d7d7d,255/?text=Img&font=lobster",
+        reverse: false
+    }}>
+    {(args) => <TwoCol {...args} />}
+</Story>
 
-## Header 2
-Some placeholder text
+## Dark Reverse
+Dark description text
 
-<Canvas>
-    <Story
-        name="Two Col"
-        args={{
-            img: "https://fakeimg.pl/800x600/cccccc,128/7d7d7d,255/?text=Img&font=lobster",
-            reverse: false
-        }}>
-        {(args) => <TwoCol {...args} />}
-    </Story>
-    <Story
-        name="Two Col Dark Reverse"
-        args={{
-            color: "#fff",
-            background: "#424753",
-            reverse: true
-        }}>
-        {(args) => <TwoCol {...args} />}
-    </Story>
-</Canvas>
+<Story
+    name="Two Col Dark Reverse"
+    args={{
+        color: "#fff",
+        background: "#424753",
+        reverse: true
+    }}>
+    {(args) => <TwoCol {...args} />}
+</Story>
 
 <ArgsTable of={TwoCol} />
