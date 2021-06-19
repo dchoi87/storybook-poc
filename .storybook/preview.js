@@ -15,36 +15,29 @@ export const parameters = {
       showLineNumbers: true
     }
   },
-  // viewport: {
-  //   viewports: {
-  //     custom1440: {
-  //       name: '1440',
-  //       styles: {
-  //         width: '1440px',
-  //         height: '800px',
-  //       },
-  //     },
-  //     custom1024: {
-  //       name: '1024',
-  //       styles: {
-  //         width: '1024px',
-  //         height: '800px',
-  //       },
-  //     },
-  //     custom768: {
-  //       name: '768',
-  //       styles: {
-  //         width: '768px',
-  //         height: '800px',
-  //       },
-  //     },
-  //     custom425: {
-  //       name: '425',
-  //       styles: {
-  //         width: '425px',
-  //         height: '800px',
-  //       },
-  //     },
-  //   }
-  // }
+  viewport: {
+    viewports: {
+      iphoneLarge: {
+        name: 'iPhone 6/7/8 Plus',
+        styles: {
+          width: '414px',
+          height: '736px',
+        },
+      },
+      iPhoneSmall: {
+        name: 'iPhone 5/SE',
+        styles: {
+          width: '320px',
+          height: '568px',
+        },
+      },
+      iPad: {
+        name: 'iPad',
+        styles: {
+          width: '768px',
+          height: '1024px',
+        },
+      },
+    }
+  }
 }
