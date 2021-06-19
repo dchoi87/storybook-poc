@@ -33,12 +33,12 @@
         display: grid;
         grid-gap: 1px;
         grid-template-columns: repeat(2, 1fr);
-        height: 300px;
     }
     .cta {
         border: 1px dashed #ccc;
-        padding: 15px 30px;
+        padding: 30px;
         background: transparent;
+        color: #999;
     }
     .responsive {
         display: block;

@@ -5,7 +5,7 @@ import './button.scss';
 export const Button = ({ primary, backgroundColor, size, label, onClick }) => {
     const btnStyle = primary
         ? { backgroundColor, color: '#fff' }
-        : { backgroundColor: '#fff', color: backgroundColor, border: `1px solid ${backgroundColor}` };
+        : { backgroundColor: '#fff', color: backgroundColor, border: `2px solid ${backgroundColor}` };
 
     return (
         <button

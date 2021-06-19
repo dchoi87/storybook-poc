@@ -8,7 +8,7 @@ import { Button } from '../buttons/Button';
 
 export const Cards = ({ img, primaryText, carousel }) => {
     return (
-        <div className="cards-container">
+        <div className={ `cards-container ${carousel ? 'carousel' : ''}` }>
             <h1>Lorem ipsum dolor sit amet</h1>
             {
                 carousel ?

@@ -34,8 +34,14 @@
             color: #6c6c6c;
         }
     }
-    button {
-        margin-top: 15px;
+    .btn {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    &.carousel {
+        .btn {
+            margin-top: 15px;
+        }
     }
     // media queries
     @media screen and (min-width: 768px) {
