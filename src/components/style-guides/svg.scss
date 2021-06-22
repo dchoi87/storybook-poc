@@ -1,0 +1,32 @@
+.svg-container {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    max-width: 600px;
+
+    svg {
+        width: 90px;
+        height: 90px;
+        background: #f8f9fa;
+        padding: 15px;
+        border-radius: 5px;
+    }
+    .svg {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .svg-label {
+        text-transform: capitalize;
+        text-align: center;
+        margin-top: 10px;
+    }
+    @media screen and (min-width: 768px) {
+        grid-template-columns: repeat(5, 1fr);
+
+    }
+}
