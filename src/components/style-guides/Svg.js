@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './svg.scss';
-import { map, paths } from './svg-paths';
+import { paths } from './svg-paths';
 
-export const Svg = ({ color, size }) => {
+export const Svg = ({ color }) => {
     return (
         <div className="svg-container">
             {
